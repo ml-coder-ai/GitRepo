@@ -38,6 +38,7 @@ def load_data():
         # Establecemos la columna 'time' como índice
         df.set_index('time', inplace=True)
         
+        # Retornamos el DataFrame
         return df
     except FileNotFoundError:
         print("Error: El archivo 'datos_energia.csv' no se encuentra en el directorio.")
